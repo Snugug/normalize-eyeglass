@@ -6,6 +6,7 @@ var getInstalledPath = require('get-installed-path');
 
 getInstalledPath('normalize.css', {
   local: true,
+  cwd: process.mainModule.paths,
 }).then(locale => {
   // Output file paths
   var input = path.join(locale, 'normalize.css');
