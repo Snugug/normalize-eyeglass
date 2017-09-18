@@ -1,0 +1,24 @@
+{
+  "name": "normalize-eyeglass",
+  "version": "1.0.0",
+  "description": "A simple Eyeglass wrapper around the latest version of Normalize.css",
+  "main": "to-sass.js",
+  "scripts": {
+    "test": "node ./to-sass.js",
+    "postinstall": "node ./to-sass.js"
+  },
+  "eyeglass": {
+    "needs": "^1.0.0",
+    "exports": "eyeglass-exports.js",
+    "name": "normalize"
+  },
+  "keywords": [
+    "eyeglass-module"
+  ],
+  "author": "Sam Richard <sam@snug.ug>",
+  "license": "MIT",
+  "dependencies": {
+    "get-installed-path": "^3.0.1",
+    "normalize.css": ">= 7"
+  }
+}
